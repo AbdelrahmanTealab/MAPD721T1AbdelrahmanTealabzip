@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MAPD721T1AbdelrahmanTealabzip">
         <service
-            android:name=".MyService"
+            android:name=".ChatbotService"
             android:enabled="true"
             android:exported="true"></service>
 
