@@ -8,8 +8,6 @@ import android.content.Intent;
 import android.util.Log;
 
 public class NotificationHandling {
-
-    private static final String TAG = "NotificationHandling";
     private final Context context;
     private final NotificationManager notificationMgr;
 
@@ -36,7 +34,7 @@ public class NotificationHandling {
             notif.flags |= Notification.FLAG_AUTO_CANCEL;
             notificationMgr.notify(0, notif);
         } catch (IllegalArgumentException e) {
-            Log.e(TAG, e.getMessage());
+            Log.e("NotificationHandling", e.getMessage());
         }
     }
 }
